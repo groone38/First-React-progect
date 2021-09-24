@@ -1,0 +1,55 @@
+.chat {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block-mes {
+    border: 1px solid lightgrey;
+    width: 50%;
+}
+
+.send {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.textarea {
+    margin-bottom: 10px;
+}
+
+.btn-mes {
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid lightgrey;
+    cursor: pointer;
+    padding: 5px;
+    color: lightgrey;
+    transition: 1s;
+}
+
+.btn-mes:hover {
+    color: black;
+    border: 1px solid black;
+}
+
+.mes {
+    padding: 0;
+}
+
+.list {
+    list-style-type: none;
+    background-color: lightsteelblue;
+    width: 70%;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 0 auto 5px;
+    height: auto;
+}
+
+.list:nth-child(even) {
+    background-color: lightgreen;
+    text-align: right;
+       
+}
