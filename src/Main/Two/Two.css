@@ -1,0 +1,31 @@
+.two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.two img {
+    width: 300px;
+}
+
+.two-card {
+    flex-basis: 300px;
+    box-shadow: 0 0 6px 2px silver;
+    margin: 20px;
+    box-sizing: border-box;
+    padding: 20px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.two-card a {
+    background: black;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 6px;
+    width: 35%;
+}

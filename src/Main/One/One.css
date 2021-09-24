@@ -1,0 +1,36 @@
+h2 {
+    text-align: center;
+}
+
+.One {
+    display: flex;
+    justify-content: space-around;
+}
+
+.One img {
+    width: 500px;
+    height: 350px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.form-name {
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.form-tel {
+    margin-bottom: 20px;
+}
+
+.btn {
+    margin-top: 20px;
+}

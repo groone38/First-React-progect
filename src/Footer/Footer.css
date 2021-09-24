@@ -1,0 +1,12 @@
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 96px;
+}
+
+.social-img img {
+    width: 42px;
+    height: 42px;
+    margin-left: 56px;
+}
