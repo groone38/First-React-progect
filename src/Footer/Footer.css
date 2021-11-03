@@ -1,12 +1,29 @@
-.social {
+.footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 96px;
+    margin-top: 90px;
 }
 
-.social-img img {
-    width: 42px;
-    height: 42px;
-    margin-left: 56px;
+.footer__text {
+    width: 30%;
+}
+
+.footer__num {
+    width: 30%;
+    letter-spacing: 5px;
+}
+
+.footer__social {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    .footer {
+        justify-content: space-evenly;
+    }
+
 }

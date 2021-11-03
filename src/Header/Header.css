@@ -10,13 +10,48 @@
     align-items: center;
 }
 
-.header img {
-    width: 57px;
-    height: 57px;
+.header-card {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .header-card a{
     text-decoration: none;
     color: black;
-    margin-right: 65px;
+}
+
+.color {
+    width: 100%;
+    background-color: #E3E3E1;
+}
+
+.logo {
+    width: 20%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.social {
+    width: 20%;
+}
+
+.social ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .header {
+        justify-content: space-evenly;
+    }
+
+    .social {
+        display: none;
+    }
 }
