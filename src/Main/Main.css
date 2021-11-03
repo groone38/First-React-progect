@@ -1,46 +1,102 @@
-.main img {
-    width: 1200px;
-    height: 600px;
-    object-fit: cover;
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 90px;
 }
 
-.block-text {
+.main__block {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.main__img img {
+    height: 400px;
+}
+
+.block__text {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 70px;
-    margin-bottom: 80px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 30px;
 }
 
-.card-block {
+.block__text h1 {
+    letter-spacing: 10px;
+}
+
+.block__link {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 30%;    
+}
+
+.link__text {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.block__link img {
+    width: 20px;
+    height: 15px;
+    margin-left: 10px;
 }
 
 .card {
-    flex-basis: 300px;
-    box-shadow: 0 0 6px 2px silver;
-    margin: 20px;
-    box-sizing: border-box;
-    padding: 20px 20px 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    margin-top: 90px;
+    flex-wrap: wrap;
+
 }
 
 .card img {
-    width: 300px;
+    width: 100%;
     height: 300px;
+    object-fit: cover;
 }
 
-.card a {
-    background: black;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 6px;
-    width: 35%;
+.card__block {
+    padding: 20px;
+    border: 1px solid black;
+    flex-basis: 350px;
+}
+
+@media screen and (max-width: 1200px) {
+    .card {
+        grid-template-columns: 0.4fr 0.4fr;
+        justify-content: center;
+        
+    }
+}
+@media screen and (max-width: 800px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main__block {
+        width: 80%;
+        margin-bottom: 50px;
+    }
+
+    .block__link {
+        width: 100%;
+    }
+    .card {
+        grid-template-columns: 0.4fr;
+        justify-content: center;
+        
+    }
+
 }

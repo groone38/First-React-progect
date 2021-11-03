@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "img": "https://pp.userapi.com/c629311/v629311784/4888c/-TCwc-7IxQ4.jpg",
+        "info": "Что есть на студии",
+        "drum": [
+            "Установка, ",
+            "crash, ",
+            "ride, ",
+            "hi-hat, ",
+            "педаль"
+        ],
+        "bass": "Бас (Fender)",
+        "guitar": "Гитара (Gibson)"
+    },
+    {
+        "id": 2,
+        "img": "https://disgustingmen.com/wp-content/uploads/2015/10/4.jpg",
+        "info": "Что есть на студии",
+        "drum": [
+            "Установка, ",
+            "crash, ",
+            "ride, ",
+            "hi-hat, ",
+            "педаль"
+        ],
+        "bass": "Бас (Fender)",
+        "guitar": "Гитара (Gibson)"
+    },
+    {
+        "id": 3,
+        "img": "https://alterainvest.ru/upload/resize_cache/iblock/4cf/350_310_2/4cfc95f840840350bfcfd66b5d36b335.jpg",
+        "info": "Что есть на студии",
+        "drum": [
+            "Установка, ",
+            "crash, ",
+            "ride, ",
+            "hi-hat, ",
+            "педаль"
+        ],
+        "bass": "Бас (Fender)",
+        "guitar": "Гитара (Gibson)"
+    }
+]

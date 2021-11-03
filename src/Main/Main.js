@@ -1,45 +1,65 @@
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import './Main.css';
-import stud2 from './img/stud2.jpg';
-import card1 from './img/card1.jpg';
-import card2 from './img/card2.jpeg';
-import card3 from './img/card3.jpg';
+import Arrow from './img/Arrow.svg';
+import micro from './img/micro.jpg';
+import Data from './data.json';
 
 function Main() {
     return(
         <div className="wrap">
             <div className="main">
-                <img src={stud2} alt="" />
-                <div className="main-block">
-                    <div className="block-text">
-                        <h2>Коротко о главном</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        </p>
+                <div className="main__block">
+                    <div className="block__text">
+                        <h1>Студия звукозаписи</h1>
+                        <p>Студия звукозаписи в Краснодаре. Записывайтесь уже сейчас</p>
                     </div>
-                    <div className="card-block">
-                        <div className="card">
-                            <img src={card1} alt="" />
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                            </p>
-                            <a href="#1" className="card-btn">Learn more</a>
-                        </div>
-                        <div className="card">
-                            <img src={card2} alt="" />
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                            </p>
-                            <a href="#1" className="card-btn">Learn more</a>
-                        </div>
-                        <div className="card">
-                            <img src={card3} alt="" />
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                            </p>
-                            <a href="#1" className="card-btn">Learn more</a>
-                        </div>
+                    <div className="block__link">
+                        <Link to="/One" className="link__text">
+                            Записаться
+                            <img src={Arrow} alt="" />
+                        </Link>
                     </div>
                 </div>
+                <div className="main__img">
+                    <img src={micro} alt="" />
+                </div>
+            </div>
+            <div>
+                <div className="card">
+                    {Data.map(e => {
+                        return (
+                            <div key={e.id} className="card__block">
+                                <img src={e.img} alt="" />
+                                <p>{e.info}</p>
+                                <p>{e.drum}</p>
+                                <p>{e.bass}</p>
+                                <p>{e.guitar}</p>
+                            </div>
+                        )
+                    }) }
+                    {/* <img src={card1} alt="" />
+                    <p>Инструменты на студии: </p>
+                    <p>Установка, crash, ride, hi-hat, педаль</p>
+                    <p>Бас (Fender)</p>
+                    <p>Гитара (Gibson)</p>
+                    <p>Keybord (Korg)</p> */}
+                </div>
+                {/* <div className="card__block">
+                    <img src={card2} alt="" />
+                    <p>Инструменты на студии: </p>
+                    <p>Установка, crash, ride, hi-hat, педаль</p>
+                    <p>Бас (Fender)</p>
+                    <p>Гитара (Gibson)</p>
+                    <p>Keybord (Korg)</p>
+                </div>
+                <div className="card__block">
+                    <img src={card3} alt="" />
+                    <p>Инструменты на студии: </p>
+                    <p>Установка, crash, ride, hi-hat, педаль</p>
+                    <p>Бас (Fender)</p>
+                    <p>Гитара (Gibson)</p>
+                    <p>Keybord (Korg)</p>
+                </div> */}
             </div>
         </div>
     )

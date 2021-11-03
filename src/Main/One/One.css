@@ -1,36 +1,50 @@
-h2 {
+.wrap h2 {
     text-align: center;
+    margin-top: 50px;
 }
 
-.One {
+.one__conteiner {
+    margin-top: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.One img {
+.one__conteiner img {
     width: 500px;
     height: 350px;
 }
 
-.form {
+.conteiner__form {
     display: flex;
     flex-direction: column;
+    border-radius: 5px;
 }
 
-.form label {
-    display: flex;
+.conteiner__form label {
     margin-bottom: 10px;
 }
 
-.form-name {
-    align-items: flex-start;
+.conteiner__form .name {
     margin-bottom: 20px;
+    border-radius: 5px;
 }
 
-.form-tel {
+.conteiner__form .tel {
     margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 .btn {
     margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .one__conteiner {
+        flex-direction: column;
+    }
+
+    form {
+        margin-bottom: 50px;
+    }
 }
